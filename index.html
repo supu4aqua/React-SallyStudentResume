@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sally Student Resume</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div id="application-root"></div>
+
+  <script
+  src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+  <script type="text/babel">
+
+// App Component
+function App() {
+  var name = 'Sally';
+  return (
+    <div>
+    <header>
+    <h1>{name} Student Details</h1>
+    </header>
+    <main>
+    <section>
+    <h2>Contact Info </h2>
+    <p>Name: Sally</p>
+    <p>Email Address: <a href="mailto:sally@gmail.com">sally@gmail.com</a></p>
+    <p>Phone: +1-412-123-3456</p>
+    <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt ="My picture">
+    </img>
+    </section>
+    <section>
+    <h2>Education </h2>
+    <p>Bachelors in CSE: University of California</p>
+    <p>Masters in CSE: University of Texas</p>
+    </section>
+
+    <section>
+    <h2>Employment History </h2>
+
+    <address>  Company: Google</address>
+      <p>Job Title : Software Developer<br />
+    Dates of Employment : Jan 2019 - Current<br />
+    Description : Responsible for developing web applications<br />
+    </p>
+    <br />
+    <address>
+    Company :Amazon</address>
+    <p>Job Title : Front End Developer<br />
+    Dates of Employment :Jan 2018- Jan 2019<br />
+    Description : Responsible for developing front end using HTML, CSS and JavaScript<br />
+    </p>
+
+    </section>
+<br />
+    </main>
+    <footer>© 2019 Sally Student</footer>
+    </div>
+  );
+};
+ReactDOM.render(
+  <App />,
+  document.querySelector('#application-root')
+);
+</script>
+
+</body>
+</html>
